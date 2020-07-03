@@ -1,0 +1,75 @@
+{
+	"pages": [{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "零食小铺",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/category/category",
+			"style": {
+				"navigationBarTitleText": "分类"
+			}
+		},
+		{
+			"path": "pages/cart/cart",
+			"style": {
+				"navigationBarTitleText": "购物侧"
+			}
+		},
+		{
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}	
+		}
+
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "#FFFFFF",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#AB956D",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"backgroundColor": "#FFFFFF",
+		"selectedColor": "#AB956D",
+		"color": "#989898",
+		"borderStyle": "white",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/toolbar/home.png",
+				"selectedIconPath": "static/toolbar/home@selected.png",
+				"text": "主页"
+			},
+			{
+				"pagePath": "pages/category/category",
+				"iconPath": "static/toolbar/category.png",
+				"selectedIconPath": "static/toolbar/category@selected.png",
+				"text": "分类"
+			},
+			{
+				"pagePath": "pages/cart/cart",
+				"iconPath": "static/toolbar/cart.png",
+				"selectedIconPath": "static/toolbar/cart@selected.png",
+				"text": "购物车"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"iconPath": "static/toolbar/my.png",
+				"selectedIconPath": "static/toolbar/my@selected.png",
+				"text": "我的"
+			}
+		]
+		
+	},
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue",
+			"uni-swiper-dot":"@/components/uni-swiper-dot/uni-swiper-dot.vue"
+		}
+	}
+
+}
